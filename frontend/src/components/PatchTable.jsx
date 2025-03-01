@@ -9,7 +9,7 @@ function PatchTable() {
       .get("https://patch-intelligence-backend.vercel.app/api/patches")
       .then((response) => setPatches(response.data))
       .catch((error) => console.error("Error fetching patches:", error));
-  }, [patches]);
+  }, []);
 
   return (
     <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-4xl">
