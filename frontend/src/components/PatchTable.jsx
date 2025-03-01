@@ -6,7 +6,7 @@ function PatchTable() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/patches")
+      .get("https://patch-intelligence-backend.vercel.app/api/patches")
       .then((response) => setPatches(response.data))
       .catch((error) => console.error("Error fetching patches:", error));
   }, [patches]);
