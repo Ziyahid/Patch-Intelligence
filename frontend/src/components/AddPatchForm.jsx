@@ -20,7 +20,7 @@ function AddPatchForm({ onPatchAdded }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/patches/add", formData);
+      await axios.post("https://patch-intelligence-backend.vercel.app/api/patches/add", formData);
       alert("Patch added successfully!");
       onPatchAdded(); // Refresh patch list
       setFormData({
